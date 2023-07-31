@@ -1,0 +1,32 @@
+name: sentenv2
+channels:
+  - pytorch-nightly
+  - nvidia
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - bitsandbytes==0.41.0; platform_system != "Windows"
+    - https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.0-py3-none-win_amd64.whl; platform_system == "Windows"
+  - jupyter
+  - numpy
+  - pandas
+  - seaborn
+  - tqdm
+  - gradio
+  - scikit-learn
+  - pytorch
+  - torchtext
+  - pytorch-cuda=12.1
+  - transformers
+  - tokenizers
+  - datasets
+  - evaluate
+  - accelerate
+  - peft
+  - sentencepiece
+  - protobuf
+  # - spacy
+  # - cupy

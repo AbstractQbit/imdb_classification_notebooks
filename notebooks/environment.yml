@@ -1,0 +1,27 @@
+name: sentenv
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10
+  - pip
+  - jupyter
+  - numpy
+  - pandas
+  - seaborn
+  - tqdm
+  - gradio
+  - scikit-learn
+  - pytorch
+  - torchtext
+  - pytorch-cuda=11.8
+  - transformers
+  - tokenizers
+  - datasets
+  - evaluate
+  - accelerate
+  - sentencepiece
+  - spacy
+  - cupy
